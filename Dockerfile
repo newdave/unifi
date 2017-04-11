@@ -27,7 +27,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
     jsvc \
     prelink \
     mongodb-server && \
-  wget -nv https://www.ubnt.com/downloads/unifi/$UNIFI_VERSION/unifi_sysvinit_all.deb && \
+  wget -nv https://dl.ubnt.com/unifi/5.6.2-224554000b/unifi_sysvinit_all.deb && \
   dpkg --install unifi_sysvinit_all.deb && \
   # fix WebRTC stack guard error
   execstack -c /usr/lib/unifi/lib/native/Linux/amd64/libubnt_webrtc_jni.so && \
